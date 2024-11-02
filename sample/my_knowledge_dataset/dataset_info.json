@@ -1,0 +1,49 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "csv",
+  "dataset_size": 100885,
+  "description": "",
+  "download_checksums": {
+    "/content/drive/MyDrive/Colab Notebooks/preprocessing_data/newest.csv": {
+      "num_bytes": 98850,
+      "checksum": null
+    }
+  },
+  "download_size": 98850,
+  "features": {
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "embeddings": {
+      "feature": {
+        "dtype": "float32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 199735,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 100885,
+      "num_examples": 502,
+      "dataset_name": "csv"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
