@@ -22,7 +22,7 @@ This project is deployed on my [Huggingface space](https://huggingface.co/spaces
 Note: Currently, the capabilities of the model deployed on huggingfeace space are limited due to hardware resources. 
 
 
-![ChatBot Interface deployed on HF space](./asset/1.png)
+![ChatBot Interface deployed on HF space](./scr_shots/1.png)
 
 
 ## Dataset
@@ -48,7 +48,7 @@ modified_df.to_csv('./path/to/your/csv', sep = '\t' )
 The RAG (Retrieval Augmented Generation) model has two major components a **Retriever** and a **Generator**.  The retriever extracts information from the knowledge-base based on the query asked by a user and feeds it to the generator with the query. Then the generator uses that information from the retriever as a context to the query asked by the user to generate the relevant answer. With the help of retrieved information from the retriever, the LLM model used for generation can produce better and up-to-date results. This addresses the major drawbacks of the Hallucination and outdated information of LLMs. 
 
 
-![Retrieval Augmented Generation model Architecture](./assets/6.png)
+![Retrieval Augmented Generation model Architecture](./scr_shots/6.png)
 
 
 
@@ -75,15 +75,15 @@ In the project, I have used [facebook/rag-sequence-nq](https://huggingface.co/fa
 
 ### CHatBot with only Retriever
 
-![Model with only Retriever](./asset/2.png)
+![Model with only Retriever](./scr_shots/2.png)
 
-![Model with only Retriever](./asset/3.png)
+![Model with only Retriever](./scr_shots/3.png)
 
 ### ChatBot with Retriever and generator
 
-![ Model with RAG](./asset/4.png)
+![ Model with RAG](./scr_shots/4.png)
 
-![Model with RAG](./asset/5.png)
+![Model with RAG](./scr_shots/5.png)
 
 
 ## Notebook
