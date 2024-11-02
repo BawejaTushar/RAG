@@ -19,7 +19,8 @@ The project aims to implement RAG model capabilities in the chat interface creat
 
 This project is deployed on my [Huggingface space](https://huggingface.co/spaces/Baweja/RAG) Have Fun .
 
-Note: Currently, the capabilities of the model deployed on huggingfeace space are limited due to hardware resources. 
+> [!NOTE]
+> Currently, the capabilities of the model deployed on huggingfeace space are limited due to hardware resources. 
 
 
 ![ChatBot Interface deployed on HF space](./scr_shots/1.png)
@@ -28,7 +29,8 @@ Note: Currently, the capabilities of the model deployed on huggingfeace space ar
 ## Dataset
 In the project, I have used a dataset of medium articles and blogs. which is available on [Kaggle](https://www.kaggle.com/datasets/harrisonjansma/medium-stories). This data was scraped from the medium's website. It is available in `.csv` format, which has more than 100 columns. For this project, I have to modify the dataset, extract relevant information and combine it into two columns: ` 'title' and 'text'`, separated by a tab `'\t'`
 
- * Note:- If you want to use the original code, your data **must have** two columns named  **title** and **text** and must be separated by a tab `'\t'`.
+  > [!IMPORTANT]
+  > If you want to use the original code, your data **must have** two columns named  **'title'** and **'text'** and must be separated by a tab `'\t'`.
 
 ```
 # To save your data in tab-separated .csv file
