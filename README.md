@@ -17,10 +17,10 @@ RAG model on the medium blog and articles dataset. A chatbot interface to help i
 
 The project aims to implement RAG model capabilities in the chat interface creating an AI assistant that can provide a better response to the query, inputted by the user, with precise context and higher accuracy. For this project, I have used The Medium blogs and articles dataset. This project is based on the research paper: [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/pdf/2005.11401).
 
-This project is deployed on my [Huggingface space](https://huggingface.co/spaces/Baweja/RAG) Have Fun .
+This project is deployed on my [Huggingface space](https://huggingface.co/spaces/Baweja/RAG). Have Fun!!!!
 
 > [!NOTE]
-> Currently, the capabilities of the model deployed on huggingfeace space are limited due to hardware resources. 
+> Currently, the capabilities of the model deployed on huggingface space are limited due to hardware resources. 
 
 
 ![ChatBot Interface deployed on HF space](./scr_shots/1.png)
@@ -47,7 +47,7 @@ modified_df.to_csv('./path/to/your/csv', sep = '\t' )
 
 ## Theory 
 
-The RAG (Retrieval Augmented Generation) model has two major components a **Retriever** and a **Generator**.  The retriever extracts information from the knowledge-base based on the query asked by a user and feeds it to the generator with the query. Then the generator uses that information from the retriever as a context to the query asked by the user to generate the relevant answer. With the help of retrieved information from the retriever, the LLM model used for generation can produce better and up-to-date results. This addresses the major drawbacks of the Hallucination and outdated information of LLMs. 
+The RAG (Retrieval Augmented Generation) model has two major components, a **Retriever** and a **Generator**.  The retriever extracts information from the knowledge-base based on the query asked by a user and feeds it to the generator with the query. Then the generator uses that information from the retriever as a context to the query, asked by the user, to generate the relevant answer. With the help of retrieved information, from the retriever, the LLM model used for generation can produce better and up-to-date results. This addresses the two major drawbacks of LLMs, Hallucination and outdated information. With the RAG model, we just need to update our knowledge-base(to extract a piece of updated information) and feed it to a generator. This method saves computational resources and the cost of retraining the model. 
 
 
 ![Retrieval Augmented Generation model Architecture](./scr_shots/6.png)
@@ -57,14 +57,14 @@ The RAG (Retrieval Augmented Generation) model has two major components a **Retr
 
 ## Indexing
 
-We have to create a knowledge-base from which the retriever can get information according to the query(input). The original paper uses the faiss (facebook AI Similarity Search ) indexing, to create its knowledge-base. In the project, I have also used the same method for my dataset. 
+We have to create a knowledge-base from which the retriever can get information according to the query(input). The original paper uses the faiss (Facebook AI Similarity Search ) indexing, to create its knowledge-base. In the project, I have also used the same method for my dataset. 
 
 ```
 import faiss
 
 ```
 
-You can create faiss indexing for your own dataset by using a Python file: `use_own_knowledge_datset.py` . This Python file is from the original research paper.  As I have mentioned before. if you using a dataset of `.csv` file format, ** it must be a tab-separated `.csv` file with columns "title" and "text" **. or you can modify the code according to your needs.
+You can create faiss indexing for your own dataset by using a Python file: `use_own_knowledge_datset.py`. This Python file is from the original research paper.  As I have mentioned before. if you using a dataset of `.csv` file format, ** it must be a tab-separated `.csv` file with columns "title" and "text" **. or you can modify the code according to your needs.
 
 ```
 python  ./use_own_knowledge_dataset.py     --csv_path path/to/my_csv     --output_dir path/to/my_knowledge_dataset 
@@ -90,7 +90,7 @@ In the project, I have used [facebook/rag-sequence-nq](https://huggingface.co/fa
 
 ## Notebook
 
-If you want to see step by step implementation you can access my [Google Colab notebook]()
+If you want to see step-by-step implementation you can access my [Google Colab notebook]()
 
 ```
 ................................ -- coming soon -- ....................................
